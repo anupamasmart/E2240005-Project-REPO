@@ -45,7 +45,6 @@
             label7 = new Label();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             btnAdd = new Button();
@@ -63,6 +62,7 @@
             button6 = new Button();
             textBox8 = new TextBox();
             label8 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -205,13 +205,6 @@
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 11;
             // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(362, 273);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 12;
-            // 
             // textBox6
             // 
             textBox6.Location = new Point(517, 273);
@@ -351,11 +344,21 @@
             label8.TabIndex = 23;
             label8.Text = "Fine :";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(362, 271);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(132, 27);
+            dateTimePicker1.TabIndex = 24;
+            // 
             // Book_In_register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1115, 590);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(textBox8);
             Controls.Add(button6);
@@ -367,7 +370,6 @@
             Controls.Add(btnAdd);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
-            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(label7);
@@ -408,7 +410,6 @@
         private Label label7;
         private TextBox textBox3;
         private TextBox textBox4;
-        private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
         private Button btnAdd;
@@ -426,5 +427,6 @@
         private Button button6;
         private TextBox textBox8;
         private Label label8;
+        private DateTimePicker dateTimePicker1;
     }
 }
