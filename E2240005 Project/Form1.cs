@@ -19,9 +19,17 @@ namespace E2240005_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            LMS obj = new LMS();
-            obj.Show();
-            this.Hide();
+            if (textBox1.Text == "admin" && textBox2.Text == "password")
+            {
+                LMS obj = new LMS();
+                obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid UserName or Password..!", "Aleart", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

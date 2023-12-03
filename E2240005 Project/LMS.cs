@@ -32,6 +32,7 @@ namespace E2240005_Project
         {
             Role obj = new Role();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -39,6 +40,7 @@ namespace E2240005_Project
         {
             Profile obj = new Profile();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -46,6 +48,7 @@ namespace E2240005_Project
         {
             Member obj = new Member();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -53,6 +56,7 @@ namespace E2240005_Project
         {
             Plan obj = new Plan();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -60,6 +64,7 @@ namespace E2240005_Project
         {
             Rack obj = new Rack();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -67,6 +72,7 @@ namespace E2240005_Project
         {
             Section obj = new Section();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -74,6 +80,7 @@ namespace E2240005_Project
         {
             Section_Rack_Map obj = new Section_Rack_Map();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -81,6 +88,7 @@ namespace E2240005_Project
         {
             Change_Password obj = new Change_Password();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -88,6 +96,7 @@ namespace E2240005_Project
         {
             Purchase obj = new Purchase();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -95,6 +104,7 @@ namespace E2240005_Project
         {
             Book_In_register obj = new Book_In_register();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -102,6 +112,7 @@ namespace E2240005_Project
         {
             Book_Out_Register obj = new Book_Out_Register();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
 
@@ -109,6 +120,7 @@ namespace E2240005_Project
         {
             Member_Transaction obj = new Member_Transaction();
             obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
     }
