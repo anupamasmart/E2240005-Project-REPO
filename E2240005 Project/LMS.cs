@@ -58,7 +58,7 @@ namespace E2240005_Project
 
         private void rackToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Role obj = new Role();
+            Rack obj = new Rack();
             obj.MdiParent = this;
             obj.Show();
         }
