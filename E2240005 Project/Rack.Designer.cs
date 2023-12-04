@@ -132,13 +132,15 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
             dataGridView1.Location = new Point(57, 204);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(644, 185);
+            dataGridView1.Size = new Size(705, 185);
             dataGridView1.TabIndex = 10;
             // 
             // Column1
@@ -146,21 +148,18 @@
             Column1.HeaderText = "Rack ID";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 125;
             // 
             // Column2
             // 
             Column2.HeaderText = "Rack Name";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 125;
             // 
             // Column3
             // 
             Column3.HeaderText = "Status";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 125;
             // 
             // Rack
             // 

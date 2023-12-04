@@ -214,13 +214,15 @@
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
             dataGridView1.Location = new Point(59, 230);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(803, 113);
+            dataGridView1.Size = new Size(984, 113);
             dataGridView1.TabIndex = 19;
             // 
             // Column1
@@ -228,42 +230,36 @@
             Column1.HeaderText = "S No";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 125;
             // 
             // Column2
             // 
             Column2.HeaderText = "Book ID";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 125;
             // 
             // Column3
             // 
             Column3.HeaderText = "Book Name";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 125;
             // 
             // Column4
             // 
             Column4.HeaderText = "Qty";
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
-            Column4.Width = 125;
             // 
             // Column5
             // 
             Column5.HeaderText = "Rate";
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
-            Column5.Width = 125;
             // 
             // Column6
             // 
             Column6.HeaderText = "Amount";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
-            Column6.Width = 125;
             // 
             // button2
             // 

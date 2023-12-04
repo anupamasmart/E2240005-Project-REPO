@@ -42,7 +42,6 @@
             RoleID = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -91,6 +90,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Active", "Inactive" });
             comboBox1.Location = new Point(244, 151);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(256, 28);
@@ -104,6 +104,7 @@
             btnNew.TabIndex = 6;
             btnNew.Text = "New";
             btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // btnUpdate
             // 
@@ -113,34 +114,39 @@
             btnUpdate.TabIndex = 7;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(576, 141);
+            btnDelete.Location = new Point(735, 26);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(136, 47);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(576, 203);
+            btnSave.Location = new Point(735, 82);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(136, 47);
             btnSave.TabIndex = 9;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { RoleID, dataGridViewTextBoxColumn1, Status, dataGridViewTextBoxColumn2 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { RoleID, dataGridViewTextBoxColumn1, Status });
             dataGridView1.Location = new Point(65, 256);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(656, 206);
+            dataGridView1.Size = new Size(868, 206);
             dataGridView1.TabIndex = 10;
             // 
             // RoleID
@@ -148,34 +154,24 @@
             RoleID.HeaderText = "RoleID";
             RoleID.MinimumWidth = 6;
             RoleID.Name = "RoleID";
-            RoleID.Width = 125;
             // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.HeaderText = "Role";
             dataGridViewTextBoxColumn1.MinimumWidth = 6;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 125;
             // 
             // Status
             // 
             Status.HeaderText = "Status";
             Status.MinimumWidth = 6;
             Status.Name = "Status";
-            Status.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Column1";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 125;
             // 
             // Role
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 490);
+            ClientSize = new Size(1021, 490);
             Controls.Add(dataGridView1);
             Controls.Add(btnSave);
             Controls.Add(btnDelete);
@@ -211,6 +207,5 @@
         private DataGridViewTextBoxColumn RoleID;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn Status;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

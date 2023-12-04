@@ -228,13 +228,15 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
             dataGridView1.Location = new Point(38, 298);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1053, 110);
+            dataGridView1.Size = new Size(1059, 110);
             dataGridView1.TabIndex = 20;
             // 
             // Column1
@@ -242,56 +244,48 @@
             Column1.HeaderText = "User ID";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 125;
             // 
             // Column2
             // 
             Column2.HeaderText = "Name";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 125;
             // 
             // Column3
             // 
             Column3.HeaderText = "Email";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 125;
             // 
             // Column4
             // 
             Column4.HeaderText = "Mobile";
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
-            Column4.Width = 125;
             // 
             // Column5
             // 
             Column5.HeaderText = "Password";
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
-            Column5.Width = 125;
             // 
             // Column6
             // 
             Column6.HeaderText = "Address";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
-            Column6.Width = 125;
             // 
             // Column7
             // 
             Column7.HeaderText = "Role";
             Column7.MinimumWidth = 6;
             Column7.Name = "Column7";
-            Column7.Width = 125;
             // 
             // Column8
             // 
             Column8.HeaderText = "Status";
             Column8.MinimumWidth = 6;
             Column8.Name = "Column8";
-            Column8.Width = 125;
             // 
             // Profile
             // 

@@ -133,13 +133,15 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { SectionID, SectionName, Status });
-            dataGridView1.Location = new Point(85, 242);
+            dataGridView1.Location = new Point(82, 279);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(426, 150);
+            dataGridView1.Size = new Size(618, 150);
             dataGridView1.TabIndex = 10;
             // 
             // SectionID
@@ -147,27 +149,24 @@
             SectionID.HeaderText = "SectionID";
             SectionID.MinimumWidth = 6;
             SectionID.Name = "SectionID";
-            SectionID.Width = 125;
             // 
             // SectionName
             // 
             SectionName.HeaderText = "Section Name";
             SectionName.MinimumWidth = 6;
             SectionName.Name = "SectionName";
-            SectionName.Width = 125;
             // 
             // Status
             // 
             Status.HeaderText = "Status";
             Status.MinimumWidth = 6;
             Status.Name = "Status";
-            Status.Width = 125;
             // 
             // Section
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(821, 509);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(textBox2);
