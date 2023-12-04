@@ -36,12 +36,15 @@ namespace E2240005_Project
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            DeleteRecords();
+            ViewGrid();
 
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            UpdateRecords();
+            ViewGrid();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -100,5 +103,19 @@ namespace E2240005_Project
             textBox2.Text = dataGridView1.Rows[n].Cells[1].Value.ToString();
             comboBox1.Text = dataGridView1.Rows[n].Cells[2].Value.ToString();
         }
+        void UpdateRecords()
+        {
+            Connection con = new Connection();
+            SqlCommand cmd = new SqlCommand(@"UPDATE [dbo].[Role_Master]
+            SET [Role] = '"+ textBox2.Text+"',[Role_Status] = '"+ comboBox1.Text + "' WHERE [Role_id] = '"+ textBox1.Text+"'", con.ActiveCon());
+            cmd.ExecuteNonQuery();
+        }
+        void DeleteRecords()
+        {
+            Connection con = new Connection();
+            SqlCommand cmd = new SqlCommand(@"Delete From [Role_Master]  WHERE [Role_id] = '" + textBox1.Text + "'", con.ActiveCon());
+            cmd.ExecuteNonQuery();
+        }
     }
 }
+ 
