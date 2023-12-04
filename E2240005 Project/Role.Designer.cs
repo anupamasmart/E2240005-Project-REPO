@@ -48,7 +48,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(80, 27);
+            label1.Location = new Point(86, 27);
             label1.Name = "label1";
             label1.Size = new Size(58, 20);
             label1.TabIndex = 0;
@@ -77,6 +77,7 @@
             // 
             textBox1.Location = new Point(244, 27);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(256, 27);
             textBox1.TabIndex = 3;
             // 
@@ -146,8 +147,10 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(868, 206);
             dataGridView1.TabIndex = 10;
+            dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
             // 
             // RoleID
             // 
