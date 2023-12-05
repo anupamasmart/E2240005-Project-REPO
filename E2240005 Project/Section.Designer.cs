@@ -39,6 +39,7 @@
             textBox2 = new TextBox();
             comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
             SectionID = new DataGridViewTextBoxColumn();
             SectionName = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
@@ -74,27 +75,29 @@
             // 
             // btnNew
             // 
-            btnNew.Location = new Point(563, 22);
+            btnNew.Location = new Point(563, 52);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(137, 57);
             btnNew.TabIndex = 3;
             btnNew.Text = "New";
             btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // btnUpdata
             // 
-            btnUpdata.Location = new Point(563, 83);
+            btnUpdata.Location = new Point(563, 135);
             btnUpdata.Name = "btnUpdata";
             btnUpdata.Size = new Size(137, 59);
             btnUpdata.TabIndex = 4;
             btnUpdata.Text = "Updata";
             btnUpdata.UseVisualStyleBackColor = true;
+            btnUpdata.Click += btnUpdata_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(563, 148);
+            btnDelete.Location = new Point(717, 52);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(137, 55);
+            btnDelete.Size = new Size(137, 57);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -102,12 +105,13 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(563, 209);
+            btnSave.Location = new Point(717, 135);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(137, 61);
+            btnSave.Size = new Size(137, 59);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // textBox1
             // 
@@ -136,13 +140,20 @@
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { SectionID, SectionName, Status });
-            dataGridView1.Location = new Point(82, 279);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, SectionID, SectionName, Status });
+            dataGridView1.Location = new Point(82, 224);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1086, 150);
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(1086, 205);
             dataGridView1.TabIndex = 10;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "#";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
             // 
             // SectionID
             // 
@@ -166,6 +177,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1289, 621);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
@@ -180,6 +192,8 @@
             Controls.Add(label1);
             Name = "Section";
             Text = "Section";
+            Load += Section_Load;
+            MouseDoubleClick += Section_MouseDoubleClick;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -198,6 +212,7 @@
         private TextBox textBox2;
         private ComboBox comboBox1;
         private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn SectionID;
         private DataGridViewTextBoxColumn SectionName;
         private DataGridViewTextBoxColumn Status;

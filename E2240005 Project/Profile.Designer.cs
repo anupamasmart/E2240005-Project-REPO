@@ -243,6 +243,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(1237, 281);
             dataGridView1.TabIndex = 20;
             dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
@@ -305,6 +306,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1287, 621);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox2);

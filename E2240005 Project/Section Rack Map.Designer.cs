@@ -221,6 +221,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1290, 617);
             Controls.Add(dataGridView1);
             Controls.Add(button4);

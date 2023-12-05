@@ -291,6 +291,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1298, 623);
             Controls.Add(dateTimePicker1);
             Controls.Add(dataGridView1);

@@ -33,15 +33,16 @@
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             dataGridView1 = new DataGridView();
+            Column4 = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -86,13 +87,6 @@
             textBox2.Size = new Size(275, 27);
             textBox2.TabIndex = 4;
             // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(178, 124);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(275, 27);
-            textBox3.TabIndex = 5;
-            // 
             // button1
             // 
             button1.Location = new Point(494, 27);
@@ -101,6 +95,7 @@
             button1.TabIndex = 6;
             button1.Text = "New";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -120,6 +115,7 @@
             button3.TabIndex = 8;
             button3.Text = "Update";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -129,19 +125,28 @@
             button4.TabIndex = 9;
             button4.Text = "Save";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column4, Column1, Column2, Column3 });
             dataGridView1.Location = new Point(57, 204);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(1197, 185);
             dataGridView1.TabIndex = 10;
+            dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "#";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
             // 
             // Column1
             // 
@@ -161,17 +166,26 @@
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(178, 121);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(275, 28);
+            comboBox1.TabIndex = 11;
+            // 
             // Rack
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1292, 611);
+            Controls.Add(comboBox1);
             Controls.Add(dataGridView1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -179,6 +193,7 @@
             Controls.Add(label1);
             Name = "Rack";
             Text = "Rack";
+            Load += Rack_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -191,14 +206,15 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
         private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
+        private ComboBox comboBox1;
     }
 }

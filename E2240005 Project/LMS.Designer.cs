@@ -39,6 +39,7 @@
             sectionToolStripMenuItem = new ToolStripMenuItem();
             sectionRackMapToolStripMenuItem = new ToolStripMenuItem();
             changePasswordToolStripMenuItem = new ToolStripMenuItem();
+            bookMasterToolStripMenuItem = new ToolStripMenuItem();
             inventoryToolStripMenuItem = new ToolStripMenuItem();
             purchaseToolStripMenuItem = new ToolStripMenuItem();
             bookInRegisterToolStripMenuItem = new ToolStripMenuItem();
@@ -64,7 +65,7 @@
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { roleToolStripMenuItem, profileToolStripMenuItem, memberToolStripMenuItem, planToolStripMenuItem, rackToolStripMenuItem, sectionToolStripMenuItem, sectionRackMapToolStripMenuItem, changePasswordToolStripMenuItem });
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { roleToolStripMenuItem, profileToolStripMenuItem, memberToolStripMenuItem, planToolStripMenuItem, rackToolStripMenuItem, sectionToolStripMenuItem, sectionRackMapToolStripMenuItem, changePasswordToolStripMenuItem, bookMasterToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(68, 24);
             toolStripMenuItem1.Text = "Master";
@@ -72,58 +73,65 @@
             // roleToolStripMenuItem
             // 
             roleToolStripMenuItem.Name = "roleToolStripMenuItem";
-            roleToolStripMenuItem.Size = new Size(210, 26);
+            roleToolStripMenuItem.Size = new Size(224, 26);
             roleToolStripMenuItem.Text = "Role";
             roleToolStripMenuItem.Click += roleToolStripMenuItem_Click;
             // 
             // profileToolStripMenuItem
             // 
             profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            profileToolStripMenuItem.Size = new Size(210, 26);
+            profileToolStripMenuItem.Size = new Size(224, 26);
             profileToolStripMenuItem.Text = "Profile";
             profileToolStripMenuItem.Click += profileToolStripMenuItem_Click;
             // 
             // memberToolStripMenuItem
             // 
             memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            memberToolStripMenuItem.Size = new Size(210, 26);
+            memberToolStripMenuItem.Size = new Size(224, 26);
             memberToolStripMenuItem.Text = "Member";
             memberToolStripMenuItem.Click += memberToolStripMenuItem_Click;
             // 
             // planToolStripMenuItem
             // 
             planToolStripMenuItem.Name = "planToolStripMenuItem";
-            planToolStripMenuItem.Size = new Size(210, 26);
+            planToolStripMenuItem.Size = new Size(224, 26);
             planToolStripMenuItem.Text = "Plan";
             planToolStripMenuItem.Click += planToolStripMenuItem_Click;
             // 
             // rackToolStripMenuItem
             // 
             rackToolStripMenuItem.Name = "rackToolStripMenuItem";
-            rackToolStripMenuItem.Size = new Size(210, 26);
+            rackToolStripMenuItem.Size = new Size(224, 26);
             rackToolStripMenuItem.Text = "Rack";
             rackToolStripMenuItem.Click += rackToolStripMenuItem_Click;
             // 
             // sectionToolStripMenuItem
             // 
             sectionToolStripMenuItem.Name = "sectionToolStripMenuItem";
-            sectionToolStripMenuItem.Size = new Size(210, 26);
+            sectionToolStripMenuItem.Size = new Size(224, 26);
             sectionToolStripMenuItem.Text = "Section";
             sectionToolStripMenuItem.Click += sectionToolStripMenuItem_Click;
             // 
             // sectionRackMapToolStripMenuItem
             // 
             sectionRackMapToolStripMenuItem.Name = "sectionRackMapToolStripMenuItem";
-            sectionRackMapToolStripMenuItem.Size = new Size(210, 26);
+            sectionRackMapToolStripMenuItem.Size = new Size(224, 26);
             sectionRackMapToolStripMenuItem.Text = "Section Rack Map";
             sectionRackMapToolStripMenuItem.Click += sectionRackMapToolStripMenuItem_Click;
             // 
             // changePasswordToolStripMenuItem
             // 
             changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            changePasswordToolStripMenuItem.Size = new Size(210, 26);
+            changePasswordToolStripMenuItem.Size = new Size(224, 26);
             changePasswordToolStripMenuItem.Text = "Change Password";
             changePasswordToolStripMenuItem.Click += changePasswordToolStripMenuItem_Click;
+            // 
+            // bookMasterToolStripMenuItem
+            // 
+            bookMasterToolStripMenuItem.Name = "bookMasterToolStripMenuItem";
+            bookMasterToolStripMenuItem.Size = new Size(224, 26);
+            bookMasterToolStripMenuItem.Text = "Book Master";
+            bookMasterToolStripMenuItem.Click += bookMasterToolStripMenuItem_Click;
             // 
             // inventoryToolStripMenuItem
             // 
@@ -182,6 +190,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGray;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(843, 697);
             Controls.Add(statusStrip);
             Controls.Add(menuStrip);
@@ -193,6 +203,7 @@
             Text = "LMS";
             WindowState = FormWindowState.Maximized;
             FormClosed += LMS_FormClosed;
+            Load += LMS_Load;
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
             statusStrip.ResumeLayout(false);
@@ -221,6 +232,7 @@
         private ToolStripMenuItem bookInRegisterToolStripMenuItem;
         private ToolStripMenuItem bookOutRegisterToolStripMenuItem;
         private ToolStripMenuItem memberTransactionToolStripMenuItem;
+        private ToolStripMenuItem bookMasterToolStripMenuItem;
     }
 }
 

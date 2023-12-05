@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
@@ -146,6 +146,24 @@ namespace E2240005_Project
         {
             CreateNew();
             ViewGrid();
+            fillcombo();
+        }
+        private void fillcombo()
+        {
+            comboBox1.Items.Clear();
+            Connection con = new Connection();
+            SqlCommand cmd = new SqlCommand(@"Select Plan_Name From Plan_Master", con.ActiveCon());
+            cmd.CommandType = CommandType.Text;
+            cmd.ExecuteNonQuery();
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt1);
+            foreach (DataRow dr in dt1.Rows)
+            {
+                comboBox1.Items.Add(dr["Plan_Name"].ToString());
+            }
+
+
         }
     }
 }

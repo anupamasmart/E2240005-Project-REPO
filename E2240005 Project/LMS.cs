@@ -123,5 +123,23 @@ namespace E2240005_Project
             obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();
         }
+
+        private void bookMasterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Book_Master obj = new Book_Master();
+            obj.MdiParent = this;
+            obj.StartPosition = FormStartPosition.CenterScreen;
+            obj.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LMS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

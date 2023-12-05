@@ -39,11 +39,11 @@
             btnDelete = new Button();
             btnSave = new Button();
             dataGridView1 = new DataGridView();
-            RoleID = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
+            RoleID = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(84, 92);
+            label2.Location = new Point(86, 92);
             label2.Name = "label2";
             label2.Size = new Size(39, 20);
             label2.TabIndex = 1;
@@ -155,13 +155,6 @@
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
             // 
-            // RoleID
-            // 
-            RoleID.HeaderText = "RoleID";
-            RoleID.MinimumWidth = 6;
-            RoleID.Name = "RoleID";
-            RoleID.Width = 359;
-            // 
             // Column1
             // 
             Column1.HeaderText = "#";
@@ -186,10 +179,18 @@
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
             // 
+            // RoleID
+            // 
+            RoleID.HeaderText = "RoleID";
+            RoleID.MinimumWidth = 6;
+            RoleID.Name = "RoleID";
+            RoleID.Width = 359;
+            // 
             // Role
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aquamarine;
             ClientSize = new Size(1286, 624);
             Controls.Add(dataGridView1);
             Controls.Add(btnSave);

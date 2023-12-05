@@ -90,7 +90,7 @@ namespace E2240005_Project
             foreach (DataRow item in dt.Rows)
             {
                 int n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = (n+1).ToString();
+                dataGridView1.Rows[n].Cells[0].Value = (n + 1).ToString();
                 dataGridView1.Rows[n].Cells[1].Value = item["Role_id"].ToString();
                 dataGridView1.Rows[n].Cells[2].Value = item["Role"].ToString();
                 dataGridView1.Rows[n].Cells[3].Value = item["Role_Status"].ToString();
