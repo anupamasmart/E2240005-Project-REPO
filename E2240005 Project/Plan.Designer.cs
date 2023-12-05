@@ -198,6 +198,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Active", "Inactive", "Onhold", "Other" });
             comboBox1.Location = new Point(511, 180);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(155, 28);

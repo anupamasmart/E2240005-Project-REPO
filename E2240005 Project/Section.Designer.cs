@@ -49,7 +49,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(82, 52);
+            label1.Location = new Point(82, 59);
             label1.Name = "label1";
             label1.Size = new Size(73, 20);
             label1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(82, 102);
+            label2.Location = new Point(82, 109);
             label2.Name = "label2";
             label2.Size = new Size(102, 20);
             label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(82, 154);
+            label3.Location = new Point(82, 162);
             label3.Name = "label3";
             label3.Size = new Size(49, 20);
             label3.TabIndex = 2;
@@ -130,6 +130,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Open to Public", "Close to Public", "Privet", "Top Priority", "Other" });
             comboBox1.Location = new Point(228, 154);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(218, 28);

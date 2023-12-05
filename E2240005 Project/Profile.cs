@@ -135,5 +135,10 @@ namespace E2240005_Project
             CreateNew();
             ViewGrid();
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

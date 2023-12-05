@@ -202,6 +202,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Good", "Poor", "Fragile", "New", "Old", "Other" });
             comboBox1.Location = new Point(797, 65);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(173, 28);

@@ -232,6 +232,7 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(176, 28);
             comboBox2.TabIndex = 19;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // dataGridView1
             // 

@@ -202,7 +202,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Active", "Inactive" });
+            comboBox2.Items.AddRange(new object[] { "Active", "Inactive", "Onhold", "Other" });
             comboBox2.Location = new Point(751, 145);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(249, 28);

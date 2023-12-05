@@ -93,7 +93,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Active", "Inactive" });
+            comboBox1.Items.AddRange(new object[] { "Populer", "Unpopuler", "Old", "New", "Other" });
             comboBox1.Location = new Point(244, 151);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(256, 28);
