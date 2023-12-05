@@ -148,7 +148,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(868, 206);
+            dataGridView1.Size = new Size(1133, 206);
             dataGridView1.TabIndex = 10;
             dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
             // 
@@ -174,7 +174,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1021, 490);
+            ClientSize = new Size(1286, 624);
             Controls.Add(dataGridView1);
             Controls.Add(btnSave);
             Controls.Add(btnDelete);

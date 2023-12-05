@@ -249,7 +249,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(987, 159);
+            dataGridView1.Size = new Size(1139, 159);
             dataGridView1.TabIndex = 24;
             // 
             // dateTimePicker1
@@ -274,7 +274,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 493);
+            ClientSize = new Size(1277, 624);
             Controls.Add(dateTimePicker2);
             Controls.Add(dateTimePicker1);
             Controls.Add(dataGridView1);

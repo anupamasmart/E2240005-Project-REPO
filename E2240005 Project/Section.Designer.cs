@@ -141,7 +141,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(618, 150);
+            dataGridView1.Size = new Size(1086, 150);
             dataGridView1.TabIndex = 10;
             // 
             // SectionID
@@ -166,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(821, 509);
+            ClientSize = new Size(1289, 621);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(textBox2);

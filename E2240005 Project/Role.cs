@@ -107,7 +107,7 @@ namespace E2240005_Project
         {
             Connection con = new Connection();
             SqlCommand cmd = new SqlCommand(@"UPDATE [dbo].[Role_Master]
-            SET [Role] = '"+ textBox2.Text+"',[Role_Status] = '"+ comboBox1.Text + "' WHERE [Role_id] = '"+ textBox1.Text+"'", con.ActiveCon());
+            SET [Role] = '" + textBox2.Text + "',[Role_Status] = '" + comboBox1.Text + "' WHERE [Role_id] = '" + textBox1.Text + "'", con.ActiveCon());
             cmd.ExecuteNonQuery();
         }
         void DeleteRecords()
@@ -118,4 +118,3 @@ namespace E2240005_Project
         }
     }
 }
- 

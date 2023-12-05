@@ -34,7 +34,7 @@ namespace E2240005_Project
             SqlDataAdapter sda = new SqlDataAdapter("Select * From Profile_Master Where Pro_User_id= '" + textBox1.Text + "'and Pro_Password = '" + textBox2.Text + "' ", con.ActiveCon());
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows.Count == 1) 
+            if (dt.Rows.Count == 1)
             {
                 LMS obj = new LMS();
                 obj.Show();

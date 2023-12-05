@@ -134,7 +134,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(173, 136);
+            label6.Location = new Point(198, 136);
             label6.Name = "label6";
             label6.Size = new Size(87, 20);
             label6.TabIndex = 9;
@@ -143,7 +143,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(301, 136);
+            label7.Location = new Point(520, 136);
             label7.Name = "label7";
             label7.Size = new Size(32, 20);
             label7.TabIndex = 10;
@@ -152,7 +152,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(443, 136);
+            label8.Location = new Point(703, 136);
             label8.Name = "label8";
             label8.Size = new Size(39, 20);
             label8.TabIndex = 11;
@@ -161,7 +161,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(567, 136);
+            label9.Location = new Point(892, 136);
             label9.Name = "label9";
             label9.Size = new Size(62, 20);
             label9.TabIndex = 12;
@@ -176,35 +176,35 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(188, 182);
+            textBox5.Location = new Point(198, 180);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 27);
+            textBox5.Size = new Size(298, 27);
             textBox5.TabIndex = 14;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(312, 182);
+            textBox6.Location = new Point(520, 180);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
+            textBox6.Size = new Size(148, 27);
             textBox6.TabIndex = 15;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(468, 185);
+            textBox7.Location = new Point(703, 180);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(93, 27);
+            textBox7.Size = new Size(157, 27);
             textBox7.TabIndex = 16;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(577, 180);
+            textBox8.Location = new Point(892, 180);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(99, 27);
             textBox8.TabIndex = 17;
             // 
             // button1
             // 
-            button1.Location = new Point(700, 176);
+            button1.Location = new Point(1035, 171);
             button1.Name = "button1";
             button1.Size = new Size(76, 33);
             button1.TabIndex = 18;
@@ -222,7 +222,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(984, 113);
+            dataGridView1.Size = new Size(1222, 262);
             dataGridView1.TabIndex = 19;
             // 
             // Column1
@@ -263,52 +263,52 @@
             // 
             // button2
             // 
-            button2.Location = new Point(168, 379);
+            button2.Location = new Point(176, 510);
             button2.Name = "button2";
-            button2.Size = new Size(130, 32);
+            button2.Size = new Size(130, 40);
             button2.TabIndex = 20;
             button2.Text = "View";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(312, 378);
+            button3.Location = new Point(312, 510);
             button3.Name = "button3";
-            button3.Size = new Size(113, 35);
+            button3.Size = new Size(130, 40);
             button3.TabIndex = 21;
             button3.Text = "New";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(443, 377);
+            button4.Location = new Point(448, 510);
             button4.Name = "button4";
-            button4.Size = new Size(91, 34);
+            button4.Size = new Size(130, 40);
             button4.TabIndex = 22;
             button4.Text = "Update";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(545, 378);
+            button5.Location = new Point(584, 510);
             button5.Name = "button5";
-            button5.Size = new Size(102, 40);
+            button5.Size = new Size(130, 40);
             button5.TabIndex = 23;
             button5.Text = "Delete";
             button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            button6.Location = new Point(666, 377);
+            button6.Location = new Point(720, 510);
             button6.Name = "button6";
-            button6.Size = new Size(94, 29);
+            button6.Size = new Size(130, 40);
             button6.TabIndex = 24;
             button6.Text = "Save";
             button6.UseVisualStyleBackColor = true;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(912, 379);
+            textBox9.Location = new Point(980, 510);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(131, 27);
             textBox9.TabIndex = 25;
@@ -316,7 +316,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(823, 381);
+            label10.Location = new Point(903, 510);
             label10.Name = "label10";
             label10.Size = new Size(42, 20);
             label10.TabIndex = 26;
@@ -335,7 +335,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1057, 450);
+            ClientSize = new Size(1295, 613);
             Controls.Add(dateTimePicker1);
             Controls.Add(label10);
             Controls.Add(textBox9);
