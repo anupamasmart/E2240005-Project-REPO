@@ -52,6 +52,7 @@ namespace E2240005_Project
             AddRecords();
             MessageBox.Show("Records Inserted Successfully..!");
             CreateNew();
+            ViewGrid();
 
         }
         void CreateNew()
@@ -89,19 +90,19 @@ namespace E2240005_Project
             foreach (DataRow item in dt.Rows)
             {
                 int n = dataGridView1.Rows.Add();
-                //dataGridView1.Rows[n].Cells[0].Value = (n+1).ToString();
-                dataGridView1.Rows[n].Cells[0].Value = item["Role_id"].ToString();
-                dataGridView1.Rows[n].Cells[1].Value = item["Role"].ToString();
-                dataGridView1.Rows[n].Cells[2].Value = item["Role_Status"].ToString();
+                dataGridView1.Rows[n].Cells[0].Value = (n+1).ToString();
+                dataGridView1.Rows[n].Cells[1].Value = item["Role_id"].ToString();
+                dataGridView1.Rows[n].Cells[2].Value = item["Role"].ToString();
+                dataGridView1.Rows[n].Cells[3].Value = item["Role_Status"].ToString();
             }
         }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             int n = dataGridView1.SelectedRows[0].Index;
-            textBox1.Text = dataGridView1.Rows[n].Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.Rows[n].Cells[1].Value.ToString();
-            comboBox1.Text = dataGridView1.Rows[n].Cells[2].Value.ToString();
+            textBox1.Text = dataGridView1.Rows[n].Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[n].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridView1.Rows[n].Cells[3].Value.ToString();
         }
         void UpdateRecords()
         {
@@ -115,6 +116,11 @@ namespace E2240005_Project
             Connection con = new Connection();
             SqlCommand cmd = new SqlCommand(@"Delete From [Role_Master]  WHERE [Role_id] = '" + textBox1.Text + "'", con.ActiveCon());
             cmd.ExecuteNonQuery();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -46,11 +46,21 @@
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             textBox8 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnNew = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btnSave = new Button();
             dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
             dateTimePicker1 = new DateTimePicker();
             dateTimePicker2 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -157,14 +167,14 @@
             // 
             textBox2.Location = new Point(180, 64);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(227, 27);
+            textBox2.Size = new Size(297, 27);
             textBox2.TabIndex = 11;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(179, 111);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(228, 27);
+            textBox3.Size = new Size(298, 27);
             textBox3.TabIndex = 12;
             // 
             // textBox4
@@ -178,7 +188,7 @@
             // 
             textBox7.Location = new Point(751, 20);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(310, 27);
+            textBox7.Size = new Size(471, 27);
             textBox7.TabIndex = 16;
             // 
             // comboBox1
@@ -203,54 +213,121 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(210, 27);
             textBox8.TabIndex = 19;
+            textBox8.TextChanged += textBox8_TextChanged;
             // 
-            // button1
+            // btnNew
             // 
-            button1.Location = new Point(576, 222);
-            button1.Name = "button1";
-            button1.Size = new Size(108, 49);
-            button1.TabIndex = 20;
-            button1.Text = "New";
-            button1.UseVisualStyleBackColor = true;
+            btnNew.Location = new Point(576, 222);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(108, 49);
+            btnNew.TabIndex = 20;
+            btnNew.Text = "New";
+            btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
-            // button2
+            // btnUpdate
             // 
-            button2.Location = new Point(714, 222);
-            button2.Name = "button2";
-            button2.Size = new Size(108, 49);
-            button2.TabIndex = 21;
-            button2.Text = "Update";
-            button2.UseVisualStyleBackColor = true;
+            btnUpdate.Location = new Point(714, 222);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(108, 49);
+            btnUpdate.TabIndex = 21;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
-            // button3
+            // btnDelete
             // 
-            button3.Location = new Point(853, 222);
-            button3.Name = "button3";
-            button3.Size = new Size(108, 49);
-            button3.TabIndex = 22;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
+            btnDelete.Location = new Point(853, 222);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(108, 49);
+            btnDelete.TabIndex = 22;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
-            // button4
+            // btnSave
             // 
-            button4.Location = new Point(986, 222);
-            button4.Name = "button4";
-            button4.Size = new Size(108, 49);
-            button4.TabIndex = 23;
-            button4.Text = "Save";
-            button4.UseVisualStyleBackColor = true;
+            btnSave.Location = new Point(986, 222);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(108, 49);
+            btnSave.TabIndex = 23;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column8, Column6, Column7, Column10, Column11 });
             dataGridView1.Location = new Point(74, 312);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1139, 159);
+            dataGridView1.Size = new Size(1139, 282);
             dataGridView1.TabIndex = 24;
+            dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "#";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Member ID";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Name";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Email";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Mobile";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "Address";
+            Column8.MinimumWidth = 6;
+            Column8.Name = "Column8";
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "DOB";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "DOJ";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            // 
+            // Column10
+            // 
+            Column10.HeaderText = "Plan ID";
+            Column10.MinimumWidth = 6;
+            Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Status";
+            Column11.MinimumWidth = 6;
+            Column11.Name = "Column11";
             // 
             // dateTimePicker1
             // 
@@ -278,10 +355,10 @@
             Controls.Add(dateTimePicker2);
             Controls.Add(dateTimePicker1);
             Controls.Add(dataGridView1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSave);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnNew);
             Controls.Add(textBox8);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
@@ -302,6 +379,7 @@
             Controls.Add(label1);
             Name = "Member";
             Text = "Member";
+            Load += Member_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -327,12 +405,22 @@
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private TextBox textBox8;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnNew;
+        private Button btnUpdate;
+        private Button btnDelete;
+        private Button btnSave;
         private DataGridView dataGridView1;
         private DateTimePicker dateTimePicker1;
         private DateTimePicker dateTimePicker2;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column10;
+        private DataGridViewTextBoxColumn Column11;
     }
 }

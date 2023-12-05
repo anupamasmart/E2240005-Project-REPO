@@ -190,28 +190,28 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(38, 273);
+            textBox3.Location = new Point(54, 273);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(198, 273);
+            textBox4.Location = new Point(208, 271);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 11;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(517, 273);
+            textBox6.Location = new Point(533, 269);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(125, 27);
             textBox6.TabIndex = 13;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(676, 273);
+            textBox7.Location = new Point(676, 269);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(125, 27);
             textBox7.TabIndex = 14;
@@ -341,7 +341,7 @@
             // 
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(362, 271);
+            dateTimePicker1.Location = new Point(379, 269);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(132, 27);
             dateTimePicker1.TabIndex = 24;

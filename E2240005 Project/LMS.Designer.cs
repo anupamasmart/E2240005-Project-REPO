@@ -72,56 +72,56 @@
             // roleToolStripMenuItem
             // 
             roleToolStripMenuItem.Name = "roleToolStripMenuItem";
-            roleToolStripMenuItem.Size = new Size(224, 26);
+            roleToolStripMenuItem.Size = new Size(210, 26);
             roleToolStripMenuItem.Text = "Role";
             roleToolStripMenuItem.Click += roleToolStripMenuItem_Click;
             // 
             // profileToolStripMenuItem
             // 
             profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            profileToolStripMenuItem.Size = new Size(224, 26);
+            profileToolStripMenuItem.Size = new Size(210, 26);
             profileToolStripMenuItem.Text = "Profile";
             profileToolStripMenuItem.Click += profileToolStripMenuItem_Click;
             // 
             // memberToolStripMenuItem
             // 
             memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            memberToolStripMenuItem.Size = new Size(224, 26);
+            memberToolStripMenuItem.Size = new Size(210, 26);
             memberToolStripMenuItem.Text = "Member";
             memberToolStripMenuItem.Click += memberToolStripMenuItem_Click;
             // 
             // planToolStripMenuItem
             // 
             planToolStripMenuItem.Name = "planToolStripMenuItem";
-            planToolStripMenuItem.Size = new Size(224, 26);
+            planToolStripMenuItem.Size = new Size(210, 26);
             planToolStripMenuItem.Text = "Plan";
             planToolStripMenuItem.Click += planToolStripMenuItem_Click;
             // 
             // rackToolStripMenuItem
             // 
             rackToolStripMenuItem.Name = "rackToolStripMenuItem";
-            rackToolStripMenuItem.Size = new Size(224, 26);
+            rackToolStripMenuItem.Size = new Size(210, 26);
             rackToolStripMenuItem.Text = "Rack";
             rackToolStripMenuItem.Click += rackToolStripMenuItem_Click;
             // 
             // sectionToolStripMenuItem
             // 
             sectionToolStripMenuItem.Name = "sectionToolStripMenuItem";
-            sectionToolStripMenuItem.Size = new Size(224, 26);
+            sectionToolStripMenuItem.Size = new Size(210, 26);
             sectionToolStripMenuItem.Text = "Section";
             sectionToolStripMenuItem.Click += sectionToolStripMenuItem_Click;
             // 
             // sectionRackMapToolStripMenuItem
             // 
             sectionRackMapToolStripMenuItem.Name = "sectionRackMapToolStripMenuItem";
-            sectionRackMapToolStripMenuItem.Size = new Size(224, 26);
+            sectionRackMapToolStripMenuItem.Size = new Size(210, 26);
             sectionRackMapToolStripMenuItem.Text = "Section Rack Map";
             sectionRackMapToolStripMenuItem.Click += sectionRackMapToolStripMenuItem_Click;
             // 
             // changePasswordToolStripMenuItem
             // 
             changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            changePasswordToolStripMenuItem.Size = new Size(224, 26);
+            changePasswordToolStripMenuItem.Size = new Size(210, 26);
             changePasswordToolStripMenuItem.Text = "Change Password";
             changePasswordToolStripMenuItem.Click += changePasswordToolStripMenuItem_Click;
             // 
@@ -185,6 +185,7 @@
             ClientSize = new Size(843, 697);
             Controls.Add(statusStrip);
             Controls.Add(menuStrip);
+            ForeColor = SystemColors.ActiveCaptionText;
             IsMdiContainer = true;
             MainMenuStrip = menuStrip;
             Margin = new Padding(4, 5, 4, 5);

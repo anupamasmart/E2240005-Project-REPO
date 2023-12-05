@@ -49,6 +49,7 @@
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             dataGridView1 = new DataGridView();
+            Column9 = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -140,6 +141,7 @@
             button1.TabIndex = 8;
             button1.Text = "New";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -149,6 +151,7 @@
             button2.TabIndex = 9;
             button2.Text = "Update";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -158,6 +161,7 @@
             button3.TabIndex = 10;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -167,6 +171,7 @@
             button4.TabIndex = 11;
             button4.Text = "Save";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // textBox1
             // 
@@ -213,6 +218,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Admin", "Management", "Employee", "Other" });
             comboBox1.Location = new Point(562, 79);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(176, 28);
@@ -221,6 +227,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Active", "Inactive" });
             comboBox2.Location = new Point(562, 120);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(176, 28);
@@ -231,13 +238,20 @@
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column9, Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
             dataGridView1.Location = new Point(38, 298);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(1237, 281);
             dataGridView1.TabIndex = 20;
+            dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "#";
+            Column9.MinimumWidth = 6;
+            Column9.Name = "Column9";
             // 
             // Column1
             // 
@@ -315,6 +329,7 @@
             Controls.Add(label1);
             Name = "Profile";
             Text = "Profile";
+            Load += Profile_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -343,6 +358,7 @@
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
