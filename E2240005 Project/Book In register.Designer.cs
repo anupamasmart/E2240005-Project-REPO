@@ -378,6 +378,7 @@
             Controls.Add(label1);
             Name = "Book_In_register";
             Text = "Book_In_register";
+            WindowState = FormWindowState.Maximized;
             Load += Book_In_register_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();

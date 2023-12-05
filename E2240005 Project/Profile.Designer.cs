@@ -332,6 +332,7 @@
             Controls.Add(label1);
             Name = "Profile";
             Text = "Profile";
+            WindowState = FormWindowState.Maximized;
             Load += Profile_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

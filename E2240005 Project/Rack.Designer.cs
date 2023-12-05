@@ -194,6 +194,7 @@
             Controls.Add(label1);
             Name = "Rack";
             Text = "Rack";
+            WindowState = FormWindowState.Maximized;
             Load += Rack_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

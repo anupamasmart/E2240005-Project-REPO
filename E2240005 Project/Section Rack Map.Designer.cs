@@ -240,6 +240,7 @@
             Controls.Add(label1);
             Name = "Section_Rack_Map";
             Text = "Section Rack Map";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

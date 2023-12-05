@@ -382,6 +382,7 @@
             Controls.Add(label1);
             Name = "Member";
             Text = "Member";
+            WindowState = FormWindowState.Maximized;
             Load += Member_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

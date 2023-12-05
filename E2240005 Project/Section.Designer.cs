@@ -193,6 +193,7 @@
             Controls.Add(label1);
             Name = "Section";
             Text = "Section";
+            WindowState = FormWindowState.Maximized;
             Load += Section_Load;
             MouseDoubleClick += Section_MouseDoubleClick;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

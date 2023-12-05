@@ -319,6 +319,7 @@
             Controls.Add(label1);
             Name = "Book_Out_Register";
             Text = "Book_Out_Register";
+            WindowState = FormWindowState.Maximized;
             Load += Book_Out_Register_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

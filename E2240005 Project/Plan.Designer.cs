@@ -360,6 +360,7 @@
             Controls.Add(label1);
             Name = "Plan";
             Text = "Plan";
+            WindowState = FormWindowState.Maximized;
             Load += Plan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

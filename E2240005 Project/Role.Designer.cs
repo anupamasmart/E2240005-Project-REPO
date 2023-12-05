@@ -205,6 +205,7 @@
             Controls.Add(label1);
             Name = "Role";
             Text = "Role";
+            WindowState = FormWindowState.Maximized;
             Load += Role_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

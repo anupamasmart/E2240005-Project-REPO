@@ -396,6 +396,7 @@
             Controls.Add(label1);
             Name = "Book_Master";
             Text = "Book_Master";
+            WindowState = FormWindowState.Maximized;
             Load += Book_Master_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
