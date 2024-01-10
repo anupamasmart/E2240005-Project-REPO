@@ -101,7 +101,7 @@
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += button3_Click;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnSave
             // 
@@ -149,6 +149,7 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(1086, 205);
             dataGridView1.TabIndex = 10;
+            dataGridView1.MouseDoubleClick += dataGridView1_MouseDoubleClick;
             // 
             // Column1
             // 
@@ -195,7 +196,6 @@
             Text = "Section";
             WindowState = FormWindowState.Maximized;
             Load += Section_Load;
-            MouseDoubleClick += Section_MouseDoubleClick;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -144,9 +144,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(539, 197);
             label9.Name = "label9";
-            label9.Size = new Size(62, 20);
+            label9.Size = new Size(55, 20);
             label9.TabIndex = 8;
-            label9.Text = "Book ID";
+            label9.Text = "Doc ID";
             // 
             // textBox1
             // 

@@ -19,12 +19,6 @@ namespace E2240005_Project
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            DeleteRecords();
-            ViewGrid();
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
 
@@ -86,13 +80,7 @@ namespace E2240005_Project
             }
         }
 
-        private void Section_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            int n = dataGridView1.SelectedRows[0].Index;
-            textBox1.Text = dataGridView1.Rows[n].Cells[1].Value.ToString();
-            textBox2.Text = dataGridView1.Rows[n].Cells[2].Value.ToString();
-            comboBox1.Text = dataGridView1.Rows[n].Cells[3].Value.ToString();
-        }
+
         void UpdateRecords()
         {
             Connection con = new Connection();
@@ -111,6 +99,20 @@ namespace E2240005_Project
         {
             CreateNew();
             ViewGrid();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteRecords();
+            ViewGrid();
+        }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int n = dataGridView1.SelectedRows[0].Index;
+            textBox1.Text = dataGridView1.Rows[n].Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[n].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridView1.Rows[n].Cells[3].Value.ToString();
         }
     }
 }

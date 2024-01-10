@@ -30,7 +30,7 @@ namespace E2240005_Project
 
         private void roleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Role obj = new Role();
+            Genres obj = new Genres();
             obj.MdiParent = this;
             obj.StartPosition = FormStartPosition.CenterScreen;
             obj.Show();

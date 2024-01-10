@@ -62,7 +62,13 @@ namespace E2240005_Project
         {
             textBox1.Clear();
             textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
             comboBox1.SelectedIndex = -1;
+            
 
             Connection con = new Connection();
             SqlDataAdapter sda = new SqlDataAdapter("Proc_New_Plan", con.ActiveCon());
@@ -137,6 +143,11 @@ namespace E2240005_Project
             Connection con = new Connection();
             SqlCommand cmd = new SqlCommand(@"Delete From [Plan_Master]  WHERE [Plan_id] = '" + textBox1.Text + "'", con.ActiveCon());
             cmd.ExecuteNonQuery();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

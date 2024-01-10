@@ -183,6 +183,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(228, 27);
             textBox4.TabIndex = 13;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox7
             // 
@@ -190,6 +191,7 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(471, 27);
             textBox7.TabIndex = 16;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // comboBox1
             // 

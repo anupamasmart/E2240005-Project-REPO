@@ -25,16 +25,6 @@ namespace E2240005_Project
             fillcombo1();
             fillcombo2();
         }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
             CreateNew();

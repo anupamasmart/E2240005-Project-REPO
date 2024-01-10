@@ -65,7 +65,7 @@
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { roleToolStripMenuItem, profileToolStripMenuItem, memberToolStripMenuItem, planToolStripMenuItem, rackToolStripMenuItem, sectionToolStripMenuItem, sectionRackMapToolStripMenuItem, changePasswordToolStripMenuItem, bookMasterToolStripMenuItem });
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { profileToolStripMenuItem, memberToolStripMenuItem, planToolStripMenuItem, roleToolStripMenuItem, sectionToolStripMenuItem, rackToolStripMenuItem, bookMasterToolStripMenuItem, sectionRackMapToolStripMenuItem, changePasswordToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(68, 24);
             toolStripMenuItem1.Text = "Master";
@@ -74,7 +74,7 @@
             // 
             roleToolStripMenuItem.Name = "roleToolStripMenuItem";
             roleToolStripMenuItem.Size = new Size(224, 26);
-            roleToolStripMenuItem.Text = "Role";
+            roleToolStripMenuItem.Text = "Genre";
             roleToolStripMenuItem.Click += roleToolStripMenuItem_Click;
             // 
             // profileToolStripMenuItem
